@@ -7,7 +7,6 @@ import { Client } from './entities/client.entity';
 
 @Injectable()
 export class ClientService {
-  private client: ClientProxy;
   private logger = new Logger('ClientService');
 
   constructor(

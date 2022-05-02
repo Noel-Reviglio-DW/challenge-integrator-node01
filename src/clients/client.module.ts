@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ClientOptions, ClientProxyFactory, ClientsModule, Transport } from '@nestjs/microservices';
+import { ClientOptions, ClientProxyFactory, Transport } from '@nestjs/microservices';
 import { ConfigService } from '@nestjs/config';
 import { ClientService } from './client.service';
 import { ClientController } from './client.controller';
@@ -11,8 +11,8 @@ const connectionFactory = {
     const clientsOptions : ClientOptions = {
       transport: Transport.TCP,
       options: { 
-        host : _configService.get("HOSTCLIENTMS"),
-        port: _configService.get("PORTCLIENTMS"),
+        host : _configService.get("CLIENTMSHOST"),
+        port: _configService.get("CLIENTMSPORT"),
       },
     };
     return ClientProxyFactory.create(clientsOptions);
@@ -22,6 +22,7 @@ const connectionFactory = {
 
 
 @Module({
+  imports: [],
   controllers: [ClientController],
   providers: [ClientService,
     connectionFactory,

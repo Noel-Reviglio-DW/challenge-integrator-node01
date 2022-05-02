@@ -1,73 +1,41 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+Se nos solicita el presente proyecto como culminación de proceso de capacitación en la tecnología serverside JavaScript. Describo los requerimientos funcionales y no funcionales que dan marco al proyecto: -Objetivos: Crear APIs para una empresa Software Factory que necesita acceder y persistir información de su negocio, para esto se pide generar una solución cloud native. Este necesita poder comprender los siguientes dominios de información:
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Clients
+Projects
+Talents Las entidades son libres de modelar a modo de percepción personal
+-Criterios de Aceptación: ● Desarrollar 3 API 's REST que tengan expuestos endpoints para poder acceder a los requisitos de negocio. ● Desarrollar la arquitectura como Microservicios. ● Generar Unit test que con su coverage supere el 70%. ● Tiene que seguir los patrones SOLID. ● Se tiene que poder probar todo el workflow en ambiente local. ● Subir el código a un repositorio Github / Gitlab. ● Utilizar Conventional commits de Angular.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+-API's REST:
 
-## Description
+Clients: La API va a ser capaz de generar un CRUD sobre los Clients.
+Projects: La API va a ser capaz de generar un CRUD sobre los Projects.
+Talents La API va a ser capaz de generar un CRUD sobre los Talents.Consideraciones adicionales
+Los proyectos tienen estados ["PENDING", "GOING", "SUSPENDED", "DONE"]
+Se debe poder obtener el listado de proyectos por cliente
+Se debe poder obtener el listado de proyectos por estados
+Se debe poder obtener el listado de proyectos por cliente y estados
+Poder asignar los clientes a muchos proyectos
+Validar la cantidad de proyectos en GOING por Talent. ( fijar un porcentaje por proyecto )
+Las API 's deben ser REST compliance, generando error handling & mapping.
+Observabilidad es un nice to have.
+Las API con method DELETE tienen que hacer un borrado lógico en la persistencia.
+-Stack tecnológico:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+nodeJS v14.x
+NestJS
+Serverless Framework
+Serverless Offline
+Jest
+npm
+TypescriptArquitectura
+-Compute: Utilizaremos AWS Lambda Function para alojar y correr el código de nuestras API 's. Cada dominio utilizara una Lambda function
 
-## Installation
+-API Gateway: Utilizaremos AWS API Gateway V1 (REST) para exponer nuestras Lambdas con API 's REST.
 
-```bash
-$ npm install
-```
+-Persistencia: Utilizaremos soluciones noSQL o SQL para persistir nuestro modelo de negocio.
 
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+DynamoDB
+MongoDB
+MySQL
+PostgreSQL
+-Diseño de Componentes: Cada Lambda estará diseñada con nestJS como framework w/ Express como HTTP Server.
