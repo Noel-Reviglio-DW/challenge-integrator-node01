@@ -1,0 +1,930 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>challenge-integrator-node01 documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">challenge-integrator-node01 documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content controller">
+                   <div class="content-data">
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Controllers</li>
+  <li >ClientController</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/clients/client.controller.ts</code>
+        </p>
+
+
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#create" >create</a>
+                            </li>
+                            <li>
+                                <a href="#findAll" >findAll</a>
+                            </li>
+                            <li>
+                                <a href="#findOne" >findOne</a>
+                            </li>
+                            <li>
+                                <a href="#remove" >remove</a>
+                            </li>
+                            <li>
+                                <a href="#update" >update</a>
+                            </li>
+                            <li>
+                                <a href="#writeLog" >writeLog</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="create"></a>
+                    <span class="name">
+                        <span ><b>create</b></span>
+                        <a href="#create"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>create(createClientDto: <a href="../classes/CreateClientDto.html" target="_self">CreateClientDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post()<br />@ApiOperation({summary: &#x27;Create a client&#x27;})<br />@ApiCreatedResponse({description: &#x27;Create a new Client&#x27;, type: Client})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="107"
+                            class="link-to-prism">src/clients/client.controller.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>createClientDto</td>
+                                    <td>
+                                                <code><a href="../classes/CreateClientDto.html" target="_self" >CreateClientDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;CreateClientDto&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns the new client created</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findAll"></a>
+                    <span class="name">
+                        <span ><b>findAll</b></span>
+                        <a href="#findAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findAll(request: Request, res)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get()<br />@ApiOperation({summary: &#x27;Get a list of all clients&#x27;})<br />@ApiOkResponse({description: &#x27;List of Client&#x27;, type: undefined})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/clients/client.controller.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+                                    <td>
+                                            <code>Request</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The list of params to filter</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>res</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Client.html" target="_self" >Observable&lt;Client[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns a list of clients</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findOne"></a>
+                    <span class="name">
+                        <span ><b>findOne</b></span>
+                        <a href="#findOne"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findOne(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, request: Request, res)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get(&#x27;:id&#x27;)<br />@ApiOperation({summary: &#x27;Get a client&#x27;})<br />@ApiOkResponse({description: &#x27;A Client&#x27;, type: Client})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/clients/client.controller.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The value to filter</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>request</td>
+                                    <td>
+                                            <code>Request</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>res</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Client.html" target="_self" >Observable&lt;Client&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns a client</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="remove"></a>
+                    <span class="name">
+                        <span ><b>remove</b></span>
+                        <a href="#remove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>remove(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Delete(&#x27;:id&#x27;)<br />@ApiOperation({summary: &#x27;Delete a client&#x27;})<br />@ApiResponse({status: 200, description: &#x27;Delete a Client, by its id&#x27;, type: String})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/clients/client.controller.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The representative value to delete a client</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;string&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns a message to confirm the deleted client</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="update"></a>
+                    <span class="name">
+                        <span ><b>update</b></span>
+                        <a href="#update"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>update(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, updateClientDto: <a href="../classes/UpdateClientDto.html" target="_self">UpdateClientDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Patch(&#x27;:id&#x27;)<br />@ApiOperation({summary: &#x27;Update a client&#x27;})<br />@ApiResponse({status: 200, description: &#x27;Update a Client&#x27;, type: Client})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/clients/client.controller.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The representative value to update a client</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>updateClientDto</td>
+                                    <td>
+                                                <code><a href="../classes/UpdateClientDto.html" target="_self" >UpdateClientDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;UpdateClientDto&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns the client that was updated</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="writeLog"></a>
+                    <span class="name">
+                        <span ><b>writeLog</b></span>
+                        <a href="#writeLog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>writeLog(level: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, startTime: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, request: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, statusCode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/clients/client.controller.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>level</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>startTime</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>request</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>statusCode</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Get, 
+         Post, Body, 
+         Patch, Param, 
+         Delete, Req, 
+         Inject, Res, 
+         HttpStatus} from &#x27;@nestjs/common&#x27;;
+import { ApiCreatedResponse, ApiOkResponse, 
+         ApiOperation, ApiResponse, 
+         ApiTags } from &#x27;@nestjs/swagger&#x27;;
+import { Request } from &#x27;express&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { WINSTON_MODULE_PROVIDER } from &#x27;nest-winston&#x27;;
+import { Logger } from &#x27;winston&#x27;;
+import { ClientService } from &#x27;./client.service&#x27;;
+import { Client } from &#x27;./entities/client.entity&#x27;;
+import { CreateClientDto } from &#x27;./dto/create-client.dto&#x27;;
+import { UpdateClientDto } from &#x27;./dto/update-client.dto&#x27;;
+
+@ApiTags(&#x27;client&#x27;)
+@Controller({
+  path: &#x27;clients&#x27;,
+  version: &#x27;1&#x27;,
+})
+export class ClientController {
+
+  constructor(private readonly clientsService: ClientService,
+              @Inject(WINSTON_MODULE_PROVIDER) private readonly logger: Logger) {}
+  
+  /** 
+   *
+   * @returns {Client[]} Returns a list of clients
+   * @param {Request} request The list of params to filter
+   */
+  @Get()
+  @ApiOperation({ summary: &#x27;Get a list of all clients&#x27; })
+  @ApiOkResponse({ 
+    description: &#x27;List of Client&#x27;,
+    type: [Client], 
+  })
+  findAll( @Req() request: Request, @Res() res ) : Observable&lt;Client[]&gt;{
+    let startTime &#x3D; Date.now();
+    try {
+      let data &#x3D; this.clientsService.findAll(request.query);
+      
+      this.writeLog(&#x27;info&#x27;, startTime, request, HttpStatus.OK, &#x27;Return the list of all clients OK&#x27;);
+
+      return res.status(HttpStatus.OK).json({
+        statusCode: HttpStatus.OK,
+        message: &#x27;OK&#x27;,
+        data: data
+      });
+      
+    } catch (error) {
+      this.writeLog(&#x27;error&#x27;, startTime, request, 500, &#x60;Error: ${error}&#x60;);
+
+      return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+        statusCode: HttpStatus.INTERNAL_SERVER_ERROR,
+        message: &#x60;ERROR: ${error}&#x60;,
+      });
+    }
+  }
+  
+  /** 
+   *
+   * @returns {Client} Returns a client
+   * @param {id} id The value to filter
+   */
+  @Get(&#x27;:id&#x27;)
+  @ApiOperation({ summary: &#x27;Get a client&#x27; })
+  @ApiOkResponse({ 
+    description: &#x27;A Client&#x27;,
+    type: Client, 
+  })
+  findOne(@Param(&#x27;id&#x27;) id: string, @Req() request: Request, @Res() res ) :Observable&lt;Client&gt; {
+    let startTime &#x3D; Date.now();
+    try {
+      const client &#x3D; this.clientsService.findOne(id);
+      
+      this.writeLog(&#x27;info&#x27;, startTime, request, HttpStatus.OK, &#x27;Return the list of all clients OK&#x27;);
+
+      return res.status(HttpStatus.OK).json({
+        statusCode: HttpStatus.OK,
+        message: &#x27;OK&#x27;,
+        data: client
+      });
+    } catch (error) {
+      this.writeLog(&#x27;error&#x27;, startTime, request, 500, &#x60;Error: ${error}&#x60;);
+
+      return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+        statusCode: HttpStatus.INTERNAL_SERVER_ERROR,
+        message: &#x60;ERROR: ${error}&#x60;,
+      });
+    }      
+  }
+
+  /** 
+   *
+   * @returns {Client} Returns the new client created
+   * @param {Body} body The values to create a new client
+   */
+   @Post()
+   @ApiOperation({ summary: &#x27;Create a client&#x27; })
+   @ApiCreatedResponse({ 
+     description: &#x27;Create a new Client&#x27;,
+     type: Client, 
+   })
+  create(@Body() createClientDto: CreateClientDto) :Observable&lt;CreateClientDto&gt;{
+    return this.clientsService.create(createClientDto);
+  }
+
+  /** 
+   *
+   * @returns {Client} Returns the client that was updated
+   * @param {Body} body The values to update a client
+   * @param {id} id The representative value to update a client
+   */
+   @Patch(&#x27;:id&#x27;)
+   @ApiOperation({ summary: &#x27;Update a client&#x27; })
+   @ApiResponse({ 
+     status: 200,
+     description: &#x27;Update a Client&#x27;,
+     type: Client, 
+   })
+  update(@Param(&#x27;id&#x27;) id: string, @Body() updateClientDto: UpdateClientDto) :Observable&lt;UpdateClientDto&gt;{
+    return this.clientsService.update(+id, updateClientDto);
+  }
+
+  /** 
+   *
+   * @returns {Client} Returns a message to confirm the deleted client
+   * @param {id} id The representative value to delete a client
+   */
+   @Delete(&#x27;:id&#x27;)
+   @ApiOperation({ summary: &#x27;Delete a client&#x27; })
+   @ApiResponse({ 
+     status: 200,
+     description: &#x27;Delete a Client, by its id&#x27;,
+     type: String, 
+   })
+  remove(@Param(&#x27;id&#x27;) id: string) : Observable&lt;string&gt; {
+    return this.clientsService.remove(+id);
+  }
+  
+  writeLog(level: string, startTime: any, request: any, statusCode: number, message: string) {
+    let finishTime &#x3D; Date.now();
+    let elapsedTime &#x3D; finishTime - startTime;
+
+    this.logger.log({
+      level: level,
+      message: message,
+      statusCode: statusCode,
+      method: request[&#x27;method&#x27;],
+      url: request[&#x27;url&#x27;],
+      duration: elapsedTime,
+    });
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'controller';
+            var COMPODOC_CURRENT_PAGE_URL = 'ClientController.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
